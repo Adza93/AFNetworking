@@ -28,6 +28,10 @@ Pod::Spec.new do |s|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
   end
 
+  s.subspec 'Decoders' do |ss|
+    ss.source_files = 'AFNetworking/AFDERDecoder.{h,m}'
+  end
+
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.osx.deployment_target = '10.10'
@@ -42,6 +46,7 @@ Pod::Spec.new do |s|
     ss.osx.dependency 'AFNetworking/Reachability'
     ss.tvos.dependency 'AFNetworking/Reachability'
     ss.dependency 'AFNetworking/Security'
+    ss.dependency 'AFNetworking/Decoders'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
   end

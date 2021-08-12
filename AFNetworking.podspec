@@ -46,7 +46,6 @@ Pod::Spec.new do |s|
     ss.osx.dependency 'AFNetworking/Reachability'
     ss.tvos.dependency 'AFNetworking/Reachability'
     ss.dependency 'AFNetworking/Security'
-    ss.dependency 'AFNetworking/Decoders'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
   end

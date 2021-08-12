@@ -24,7 +24,6 @@
 #import <AssertMacros.h>
 #import <CommonCrypto/CommonDigest.h>
 #import "AFDERDecoder.h"
-#import "AFDERDecoder.m"
 
 #if !TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV
 static NSData * AFSecKeyGetData(SecKeyRef key) {
